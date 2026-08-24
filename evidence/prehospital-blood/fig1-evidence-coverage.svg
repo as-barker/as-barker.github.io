@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" role="img" aria-labelledby="fig1title fig1desc">
+  <title id="fig1title">Evidence coverage for prehospital blood by question and population</title>
+  <desc id="fig1desc">A two by two matrix. Rows are the two questions: whether prehospital transfusion improves outcomes over standard care, and which product to transfuse. Columns are trauma and nontraumatic populations. Randomized evidence exists only in the trauma column. The nontraumatic column contains retrospective surrogate endpoint data for the first question and no data for the second.</desc>
+
+  <style>
+    .lbl { font-family: Calibri, Carlito, "Segoe UI", sans-serif; font-size: 15px; fill: #1a1a1a; }
+    .hdr { font-family: Calibri, Carlito, "Segoe UI", sans-serif; font-size: 15px; font-weight: 600; fill: #1a1a1a; }
+    .cell-h { font-family: Calibri, Carlito, "Segoe UI", sans-serif; font-size: 14px; font-weight: 600; fill: #1a1a1a; }
+    .cell-b { font-family: Calibri, Carlito, "Segoe UI", sans-serif; font-size: 13px; fill: #333333; }
+    .cap { font-family: Calibri, Carlito, "Segoe UI", sans-serif; font-size: 12px; fill: #555555; }
+    .rot { font-family: Calibri, Carlito, "Segoe UI", sans-serif; font-size: 15px; font-weight: 600; fill: #1a1a1a; }
+  </style>
+
+  <rect width="760" height="420" fill="#ffffff"/>
+
+  <text class="hdr" x="290" y="40" text-anchor="middle">Traumatic hemorrhage</text>
+  <text class="hdr" x="570" y="40" text-anchor="middle">Nontraumatic hemorrhage</text>
+
+  <text class="rot" x="-140" y="24" transform="rotate(-90)" text-anchor="middle">Transfuse or not</text>
+  <text class="rot" x="-300" y="24" transform="rotate(-90)" text-anchor="middle">Which product</text>
+
+  <rect x="150" y="55" width="280" height="150" fill="#d9e6f2" stroke="#5b7f9e" stroke-width="1"/>
+  <text class="cell-h" x="168" y="82">Randomized, discordant</text>
+  <text class="cell-b" x="168" y="106">PAMPer positive, COMBAT and</text>
+  <text class="cell-b" x="168" y="126">RePHILL null. Benefit appears</text>
+  <text class="cell-b" x="168" y="146">confined to longer transport</text>
+  <text class="cell-b" x="168" y="166">intervals on post-hoc analysis.</text>
+  <text class="cell-b" x="168" y="190">Population and time differ across trials.</text>
+
+  <rect x="430" y="55" width="280" height="150" fill="#f2e4d9" stroke="#a8825f" stroke-width="1"/>
+  <text class="cell-h" x="448" y="82">No randomized data</text>
+  <text class="cell-b" x="448" y="106">Retrospective series only.</text>
+  <text class="cell-b" x="448" y="126">Hemoglobin and INR improve;</text>
+  <text class="cell-b" x="448" y="146">mortality, ICU days and length</text>
+  <text class="cell-b" x="448" y="166">of stay unchanged against</text>
+  <text class="cell-b" x="448" y="186">untransfused comparison groups.</text>
+
+  <rect x="150" y="205" width="280" height="150" fill="#c5dbc7" stroke="#5f8a63" stroke-width="1"/>
+  <text class="cell-h" x="168" y="232">Randomized, consistent</text>
+  <text class="cell-b" x="168" y="256">TOWAR and SWiFT both null for</text>
+  <text class="cell-b" x="168" y="276">whole blood over components</text>
+  <text class="cell-b" x="168" y="296">at up to two units.</text>
+  <text class="cell-b" x="168" y="320">Beyond two units untested;</text>
+  <text class="cell-b" x="168" y="340">TROOP reports around mid-2027.</text>
+
+  <rect x="430" y="205" width="280" height="150" fill="#eeeeee" stroke="#999999" stroke-width="1"/>
+  <text class="cell-h" x="448" y="232">No data</text>
+  <text class="cell-b" x="448" y="256">The product question has not</text>
+  <text class="cell-b" x="448" y="276">been reached in this population,</text>
+  <text class="cell-b" x="448" y="296">because the practical comparator</text>
+  <text class="cell-b" x="448" y="316">remains crystalloid rather than</text>
+  <text class="cell-b" x="448" y="336">component therapy.</text>
+
+  <text class="cap" x="150" y="382">Figure 1. Randomized evidence exists only in the left column. Roughly 40 to 46 percent of ground whole blood</text>
+  <text class="cap" x="150" y="400">utilization falls in the right column, where no trial has enrolled a patient.</text>
+</svg>
