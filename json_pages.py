@@ -54,6 +54,11 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':
 async function render(){
   const el = document.getElementById('index');
   try {
+    const pr = await fetch(document.body.dataset.up + 'pages.json');
+    if(pr.ok){ const pd = await pr.json();
+      document.getElementById('lede').textContent = pd.categories.recipes.lede; }
+  } catch(e){}
+  try {
     const r = await fetch('recipes.json');
     if(!r.ok) throw new Error(r.status);
     const rs = await r.json();
@@ -106,7 +111,140 @@ async function render(){
   + `<div class="method"><ol>${steps}</ol>`
   + `<div class="macros"><p class="tbl-label">Macros</p>`
   + `<table><tbody>${mac}</tbody></table>`
-  + `<p class="tbl-note">${esc(r.note)}</p></div></div>`;
+  + (r.note ? `<p class="tbl-note">${esc(r.note)}</p>` : '')
+  + `</div></div>`;
+}
+render();
+"""
+
+
+CATEGORY_JS = """
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const KEY = document.body.dataset.cat;
+const UP  = document.body.dataset.up || '';
+async function render(){
+  let d;
+  try {
+    const r = await fetch(UP + 'pages.json');
+    if(!r.ok) throw new Error(r.status);
+    d = await r.json();
+  } catch(e){
+    document.getElementById('index').innerHTML =
+      '<p class="loadfail">Could not load this page. The text is in '
+      + '<a href="' + UP + 'pages.json">pages.json</a>.</p>';
+    return;
+  }
+  const c = d.categories[KEY];
+  document.getElementById('title').textContent = c.heading;
+  document.getElementById('here').textContent = c.heading;
+  document.title = c.heading + ' \u00b7 AB';
+  document.getElementById('lede').textContent = c.lede;
+  const items = (d.items || {})[KEY];
+  const el = document.getElementById('index');
+  if (items && items.length) {
+    el.className = 'ix';
+    el.innerHTML = items.map(i =>
+      `<li style="--tc:${esc(document.body.dataset.colour)}"><a href="${esc(i.href)}">`
+      + `<span class="tag">${esc(i.title)}</span><p>${esc(i.description)}</p>`
+      + `<div class="meta">${i.meta}</div></a></li>`).join('');
+  } else {
+    el.className = '';
+    el.innerHTML = `<div class="empty">${esc(c.empty || 'Nothing posted yet.')}</div>`;
+  }
+}
+render();
+"""
+
+VENT_JS = """
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const UP = document.body.dataset.up;
+async function render(){
+  let d;
+  try {
+    const r = await fetch(UP + 'pages.json');
+    if(!r.ok) throw new Error(r.status);
+    d = (await r.json()).vent;
+  } catch(e){
+    document.getElementById('index').innerHTML =
+      '<p class="loadfail">Could not load this page. The text is in '
+      + '<a href="' + UP + 'pages.json">pages.json</a>.</p>';
+    return;
+  }
+  document.getElementById('title').textContent = d.heading;
+  document.getElementById('here').textContent = d.heading;
+  document.title = d.heading + ' \u00b7 AB';
+  document.getElementById('lede').textContent = d.lede;
+  document.getElementById('index').innerHTML = d.sections.map(s =>
+    `<li style="--tc:#8E3324"><a href="${esc(s.href)}">`
+    + `<span class="tag">${esc(s.title)}</span><p>${esc(s.description)}</p>`
+    + `<div class="meta">${s.meta}</div></a></li>`).join('');
+}
+render();
+"""
+
+PRECOURSE_JS = """
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const UP = document.body.dataset.up;
+async function render(){
+  let p, v;
+  try {
+    const r = await fetch(UP + 'pages.json');
+    if(!r.ok) throw new Error(r.status);
+    v = (await r.json()).vent; p = v.precourse;
+  } catch(e){
+    document.getElementById('main').innerHTML =
+      '<p class="loadfail">Could not load this page. The text is in '
+      + '<a href="' + UP + 'pages.json">pages.json</a>.</p>';
+    return;
+  }
+  document.getElementById('title').textContent = p.heading;
+  document.getElementById('here').textContent = p.heading;
+  document.getElementById('vent-crumb').textContent = v.heading;
+  document.getElementById('lede').textContent = p.lede;
+  document.getElementById('control').innerHTML = p.control;
+
+  const reading = p.reading.map(r =>
+    `<li><a href="${esc(r.page)}" rel="noopener">${esc(r.pageLabel)}</a>, and the `
+    + `<a href="${esc(r.pdf)}" rel="noopener">${esc(r.pdfLabel)}</a></li>`).join('');
+  const videos = p.videos.map((id,i) =>
+    `<div class="embed"><iframe src="https://www.youtube-nocookie.com/embed/${esc(id)}" `
+    + `title="Ventilator lecture, part ${i+1}" loading="lazy" allowfullscreen></iframe></div>`).join('');
+
+  document.getElementById('main').innerHTML =
+    `<h2 class="sec">${esc(p.examHeading)}</h2><p>${esc(p.examText)}</p>`
+  + `<div class="embed embed-form"><iframe src="${esc(p.formUrl)}&amp;embed=true" `
+  + `title="Ventilator written examination" loading="lazy" allowfullscreen></iframe></div>`
+  + `<p class="credit">If the examination will not load or sign you in here, `
+  + `<a href="${esc(p.formUrl)}" rel="noopener">open it in a new tab</a>.</p>`
+  + `<h2 class="sec">${esc(p.readingHeading)}</h2><p>${esc(p.readingText)}</p>`
+  + `<ul class="pts">${reading}</ul>`
+  + `<h2 class="sec">${esc(p.videoHeading)}</h2>${videos}`
+  + `<p class="credit">${esc(p.credit)}</p>`;
+}
+render();
+"""
+
+STUB_JS = """
+const KEY = document.body.dataset.stub;
+const UP  = document.body.dataset.up;
+async function render(){
+  let d;
+  try {
+    const r = await fetch(UP + 'pages.json');
+    if(!r.ok) throw new Error(r.status);
+    d = (await r.json()).vent;
+  } catch(e){
+    document.getElementById('main').innerHTML =
+      '<p class="loadfail">Could not load this page. The text is in '
+      + '<a href="' + UP + 'pages.json">pages.json</a>.</p>';
+    return;
+  }
+  const s = d[KEY];
+  document.getElementById('title').textContent = s.heading;
+  document.getElementById('here').textContent = s.heading;
+  document.getElementById('vent-crumb').textContent = d.heading;
+  document.getElementById('lede').textContent = s.lede;
+  document.getElementById('main').innerHTML = `<div class="empty">${s.empty}</div>`;
 }
 render();
 """

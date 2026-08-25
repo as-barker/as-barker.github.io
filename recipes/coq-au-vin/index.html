@@ -41,7 +41,8 @@ async function render(){
   + `<div class="method"><ol>${steps}</ol>`
   + `<div class="macros"><p class="tbl-label">Macros</p>`
   + `<table><tbody>${mac}</tbody></table>`
-  + `<p class="tbl-note">${esc(r.note)}</p></div></div>`;
+  + (r.note ? `<p class="tbl-note">${esc(r.note)}</p>` : '')
+  + `</div></div>`;
 }
 render();
 </script>

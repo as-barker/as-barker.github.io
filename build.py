@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import json as _json
-from json_pages import LANDING_JS, RECIPE_INDEX_JS, RECIPE_PAGE_JS
+from json_pages import (LANDING_JS, RECIPE_INDEX_JS, RECIPE_PAGE_JS,
+                        CATEGORY_JS, VENT_JS, PRECOURSE_JS, STUB_JS)
 """Generates the whole static site into ./dist from the data below."""
 import os, shutil, html
 
@@ -211,147 +212,77 @@ def build_landing():
     html = html.replace('</body>', f'<script>{LANDING_JS}</script>\n</body>')
     write("index.html", html)
     write("site.json", open("json/site.json").read())
+    write("pages.json", open("json/pages.json").read())
 
 
-# ------------------------------------------------------- simple category
-def category(slug, depth, crumbs, heading, blurb, items=None, empty_msg=None):
-    name, col = CATS[slug]
-    if items:
-        li = []
-        for href, t, d, meta in items:
-            li.append(f'<li style="--tc:{col}"><a href="{href}">'
-                      f'<span class="tag">{t}</span><p>{d}</p>'
-                      f'<div class="meta">{meta}</div></a></li>')
-        inner = f'<ul class="ix">{chr(10).join(li)}</ul>'
-    else:
-        inner = f'<div class="empty">{empty_msg}</div>'
-    body = (f'<h1 class="doc">{heading}</h1>'
-            f'<p class="standfirst lede">{blurb}</p>{inner}')
-    return page(depth, f"{heading} \u00b7 AB", col, body, crumbs)
+# ------------------------------------------------------- shells reading pages.json
+def shell(depth, crumbs, colour, cat=None, extra_attrs="", main_id="index", script=""):
+    up = "../" * depth if depth else ""
+    body = ('<h1 class="doc" id="title">&nbsp;</h1>'
+            '<p class="standfirst lede" id="lede"></p>'
+            f'<ul class="ix" id="{main_id}"><li class="loading">Loading&hellip;</li></ul>')
+    html = page(depth, "AB", colour, body, crumbs)
+    html = html.replace('<span>__HERE__</span>', '<span id="here"></span>')
+    html = html.replace('<span>__VENT__</span>', '<span id="vent-crumb"></span>')
+    html = html.replace('__VENT__</a>', '<span id="vent-crumb"></span></a>')
+    attrs = f' data-up="{up}"' + extra_attrs
+    html = html.replace('<body>', f'<body{attrs}>')
+    html = html.replace('</body>', f'<script>{script}</script>\n</body>')
+    return html
 
 
 def build_categories():
-    write("programs/index.html", category(
-        "programs", 1, [("AB","index.html"),("Programs and tools",None)],
-        "Programs and tools",
-        "The tools I built or borrowed to make programs run. Steal away.",
-        empty_msg="Nothing posted yet."))
-
-    write("austere/index.html", category(
-        "austere", 1, [("AB","index.html"),("Austere medicine",None)],
-        "Austere medicine",
-        "Reading, coursework, and my own research as it happens.",
-        empty_msg="Nothing posted yet."))
-
-    write("evidence/index.html", category(
-        "evidence", 1, [("AB","index.html"),("Evidence reviews",None)],
-        "Evidence reviews",
-        "The literature behind prehospital practice, as I read it.",
-        items=[("prehospital-blood/", "Prehospital blood",
-                "Quick overview of the evidence surrounding prehospital blood administration. More in-depth review to follow.",
-                "<b>Review</b> &nbsp; Compiled 2026-08-24")]))
-
-    write("training/index.html", category(
-        "training", 1, [("AB","index.html"),("Training",None)],
-        "Training",
-        "What I teach, and the material behind it.",
-        items=[("vent/", "Ventilators for Critical Care Paramedics",
-                "Pre-course reading, course material, and assessment for the ventilator program.",
-                "<b>3 sections</b> &nbsp; Updated 2026-08-24")]))
+    for slug in ("evidence", "programs", "training", "austere"):
+        name, col = CATS[slug]
+        h = shell(1, [("AB","index.html"),("__HERE__",None)], col,
+                  extra_attrs=f' data-cat="{slug}" data-colour="{col}"',
+                  script=CATEGORY_JS)
+        write(f"{slug}/index.html", h)
 
     _, col = CATS["training"]
-    secs = [
-        ("pre-course/", "Pre-course materials",
-         "Reading and video to work through before the course.",
-         "<b>4 resources</b> &nbsp; Updated 2026-08-24"),
-        ("course/", "Course resources",
-         "Lecture slides and in-class material.",
-         '<span class="no">Not posted yet</span>'),
-        ("assessment/", "Assessment resources",
-         "Written examination, practical examination, and scenario documentation.",
-         '<span class="no">Held until after the first course</span>'),
-    ]
-    li = [f'<li style="--tc:{col}"><a href="{h}"><span class="tag">{t}</span>'
-          f'<p>{d}</p><div class="meta">{m}</div></a></li>' for h,t,d,m in secs]
-    body = ('<h1 class="doc">Ventilators for Critical Care Paramedics</h1>'
-            '<p class="standfirst lede">A prehospital ventilator training program '
-            'built around the HAMILTON-T1.</p>'
-            f'<ul class="ix">{chr(10).join(li)}</ul>')
-    write("training/vent/index.html", page(
-        2, "Ventilators for Critical Care Paramedics \u00b7 AB", col, body,
-        [("AB","index.html"),("Training","training/"),("Ventilators for Critical Care Paramedics",None)]))
+    h = shell(2, [("AB","index.html"),("Training","training/"),("__HERE__",None)], col,
+              extra_attrs=' data-colour="%s"' % col, script=VENT_JS)
+    write("training/vent/index.html", h)
 
 
 def build_vent_pages():
     _, col = CATS["training"]
     crumbs = [("AB","index.html"),("Training","training/"),
-              ("Ventilators for Critical Care Paramedics","training/vent/")]
+              ("__VENT__","training/vent/"),("__HERE__",None)]
 
-    pre = """<h1 class="doc">Pre-course materials</h1>
-<p class="standfirst">Work through these before the course. The written examination comes first, so
-do it before you read anything else, or the baseline is worthless.</p>
-<div class="control"><span class="live">4 resources</span><span>Updated 2026-08-24</span></div>
+    body = ('<h1 class="doc" id="title">&nbsp;</h1>'
+            '<p class="standfirst" id="lede"></p>'
+            '<div class="control" id="control"></div>'
+            '<div id="main"><p class="loading">Loading&hellip;</p></div>')
+    h = page(3, "AB", col, body, crumbs)
+    h = h.replace('<span>__HERE__</span>', '<span id="here"></span>')
+    h = h.replace('__VENT__</a>', '<span id="vent-crumb"></span></a>')
+    h = h.replace('<body>', '<body data-up="../../../">')
+    h = h.replace('</body>', f'<script>{PRECOURSE_JS}</script>\n</body>')
+    write("training/vent/pre-course/index.html", h)
 
-<h2 class="sec">1. Written examination</h2>
-<p>Twenty-five items. This is not the credential and it is not graded against you. It measures
-whether the teaching worked and shows where coaching should go. Do it before you read anything
-below, or the baseline is worthless.</p>
-<div class="embed embed-form"><iframe
-src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=csweVMRVaE2CRqvM1CUJ8MKbGMS0Y9NOi_lGkbZ0XshUQzhFUzU5NU9aR0g4NlFRVFJXWkYxTzE1Si4u&amp;embed=true"
-title="Ventilator written examination" loading="lazy"
-allowfullscreen></iframe></div>
-<p class="credit">If the examination will not load or sign you in here,
-<a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=csweVMRVaE2CRqvM1CUJ8MKbGMS0Y9NOi_lGkbZ0XshUQzhFUzU5NU9aR0g4NlFRVFJXWkYxTzE1Si4u" rel="noopener">open it in a new tab</a>.</p>
-
-<h2 class="sec">2. Reading</h2>
-<p>Two handouts from Scott Weingart's EMCrit ventilator series. Read the management article first,
-then keep the handout to hand during the course.</p>
-<ul class="pts">
-<li><a href="https://emcrit.org/emcrit/vent-part-1/" rel="noopener">EMCrit ventilator management, part 1</a>,
-and the <a href="https://emcrit.org/wp-content/uploads/2010/05/Managing-Initial-Vent-ED.pdf" rel="noopener">article PDF</a></li>
-<li><a href="https://emcrit.org/emcrit/vent-part-2/" rel="noopener">EMCrit ventilator management, part 2</a>,
-and the <a href="https://emcrit.org/wp-content/uploads/vent-handout.pdf" rel="noopener">handout PDF</a></li>
-</ul>
-
-<h2 class="sec">3. Video</h2>
-<div class="embed"><iframe src="https://www.youtube-nocookie.com/embed/G9TiP3kkK9Q"
-title="Ventilator lecture, part 1" loading="lazy"
-allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe></div>
-<div class="embed"><iframe src="https://www.youtube-nocookie.com/embed/rsArr9tu1yM"
-title="Ventilator lecture, part 2" loading="lazy"
-allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe></div>
-<p class="credit">Reading and video by Scott Weingart, EMCrit. Linked with credit, not reproduced.</p>"""
-    write("training/vent/pre-course/index.html", page(
-        3, "Pre-course materials \u00b7 AB", col, pre,
-        crumbs + [("Pre-course materials", None)]))
-
-    course = """<h1 class="doc">Course resources</h1>
-<p class="standfirst">Lecture slides and in-class material.</p>
-<div class="empty">Not posted yet. Slides go up once the deck is finished.</div>"""
-    write("training/vent/course/index.html", page(
-        3, "Course resources \u00b7 AB", col, course,
-        crumbs + [("Course resources", None)]))
-
-    assess = """<h1 class="doc">Assessment resources</h1>
-<p class="standfirst lede">Written examination, practical examination, and scenario documentation. The practical check-off is the credential.</p>
-<div class="empty">Held until after the first course has run.</div>"""
-    write("training/vent/assessment/index.html", page(
-        3, "Assessment resources \u00b7 AB", col, assess,
-        crumbs + [("Assessment resources", None)]))
+    for key in ("course", "assessment"):
+        body = ('<h1 class="doc" id="title">&nbsp;</h1>'
+                '<p class="standfirst lede" id="lede"></p>'
+                '<div id="main"><p class="loading">Loading&hellip;</p></div>')
+        h = page(3, "AB", col, body, crumbs)
+        h = h.replace('<span>__HERE__</span>', '<span id="here"></span>')
+        h = h.replace('__VENT__</a>', '<span id="vent-crumb"></span></a>')
+        h = h.replace('<body>', f'<body data-up="../../../" data-stub="{key}">')
+        h = h.replace('</body>', f'<script>{STUB_JS}</script>\n</body>')
+        write(f"training/vent/{key}/index.html", h)
 
 
 def build_recipes():
     _, col = CATS["recipes"]
     write("recipes/recipes.json", open("json/recipes.json").read())
 
-    body = ('<h1 class="doc">Recipes</h1>'
-            '<p class="standfirst lede">Imperial with grams alongside, macros at the bottom. '
-            'Ingredients sit in their own panel so you can weigh everything out before you start.</p>'
+    body = ('<h1 class="doc" id="title">Recipes</h1>'
+            '<p class="standfirst lede" id="lede"></p>'
             '<ul class="ix" id="index"><li class="loading">Loading&hellip;</li></ul>')
     html = page(1, "Recipes \u00b7 AB", col, body,
                 [("AB","index.html"),("Recipes",None)])
+    html = html.replace('<body>', '<body data-up="../">')
     html = html.replace('</body>', f'<script>{RECIPE_INDEX_JS}</script>\n</body>')
     write("recipes/index.html", html)
 

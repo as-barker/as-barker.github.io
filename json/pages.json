@@ -1,0 +1,108 @@
+{
+  "categories": {
+    "evidence": {
+      "heading": "Evidence reviews",
+      "lede": "The literature behind prehospital practice, as I read it."
+    },
+    "programs": {
+      "heading": "Programs and tools",
+      "lede": "The tools I built or borrowed to make programs run. Steal away.",
+      "empty": "Nothing posted yet."
+    },
+    "training": {
+      "heading": "Training",
+      "lede": "What I teach, and the material behind it."
+    },
+    "austere": {
+      "heading": "Austere medicine",
+      "lede": "Reading, coursework, and my own research as it happens.",
+      "empty": "Nothing posted yet."
+    },
+    "recipes": {
+      "heading": "Recipes",
+      "lede": "Imperial with grams alongside, macros at the bottom. Ingredients sit in their own panel so you can weigh everything out before you start."
+    }
+  },
+  "items": {
+    "evidence": [
+      {
+        "href": "prehospital-blood/",
+        "title": "Prehospital blood",
+        "description": "Quick overview of the evidence surrounding prehospital blood administration. More in-depth review to follow.",
+        "meta": "<b>Review</b> &nbsp; Compiled 2026-08-24"
+      }
+    ],
+    "training": [
+      {
+        "href": "vent/",
+        "title": "Ventilators for Critical Care Paramedics",
+        "description": "Pre-course reading, course material, and assessment for the ventilator program.",
+        "meta": "<b>3 sections</b> &nbsp; Updated 2026-08-24"
+      }
+    ]
+  },
+  "vent": {
+    "heading": "Ventilators for Critical Care Paramedics",
+    "lede": "A prehospital ventilator training program built around the HAMILTON-T1.",
+    "sections": [
+      {
+        "href": "pre-course/",
+        "title": "Pre-course materials",
+        "description": "Reading and video to work through before the course.",
+        "meta": "<b>4 resources</b> &nbsp; Updated 2026-08-24"
+      },
+      {
+        "href": "course/",
+        "title": "Course resources",
+        "description": "Lecture slides and in-class material.",
+        "meta": "<span class=\"no\">Not posted yet</span>"
+      },
+      {
+        "href": "assessment/",
+        "title": "Assessment resources",
+        "description": "Written examination, practical examination, and scenario documentation.",
+        "meta": "<span class=\"no\">Held until after the first course</span>"
+      }
+    ],
+    "precourse": {
+      "heading": "Pre-course materials",
+      "lede": "Work through these before the course. The written examination comes first, so do it before you read anything else, or the baseline is worthless.",
+      "control": "<span class=\"live\">4 resources</span><span>Updated 2026-08-24</span>",
+      "examHeading": "1. Written examination",
+      "examText": "Twenty-five items. This is not the credential and it is not graded against you. It measures whether the teaching worked and shows where coaching should go. Do it before you read anything below, or the baseline is worthless.",
+      "formUrl": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=csweVMRVaE2CRqvM1CUJ8MKbGMS0Y9NOi_lGkbZ0XshUQzhFUzU5NU9aR0g4NlFRVFJXWkYxTzE1Si4u",
+      "readingHeading": "2. Reading",
+      "readingText": "Two handouts from Scott Weingart's EMCrit ventilator series. Read the management article first, then keep the handout to hand during the course.",
+      "reading": [
+        {
+          "page": "https://emcrit.org/emcrit/vent-part-1/",
+          "pageLabel": "EMCrit ventilator management, part 1",
+          "pdf": "https://emcrit.org/wp-content/uploads/2010/05/Managing-Initial-Vent-ED.pdf",
+          "pdfLabel": "article PDF"
+        },
+        {
+          "page": "https://emcrit.org/emcrit/vent-part-2/",
+          "pageLabel": "EMCrit ventilator management, part 2",
+          "pdf": "https://emcrit.org/wp-content/uploads/vent-handout.pdf",
+          "pdfLabel": "handout PDF"
+        }
+      ],
+      "videoHeading": "3. Video",
+      "videos": [
+        "G9TiP3kkK9Q",
+        "rsArr9tu1yM"
+      ],
+      "credit": "Reading and video by Scott Weingart, EMCrit. Linked with credit, not reproduced."
+    },
+    "course": {
+      "heading": "Course resources",
+      "lede": "Lecture slides and in-class material.",
+      "empty": "Not posted yet. Slides go up once the deck is finished."
+    },
+    "assessment": {
+      "heading": "Assessment resources",
+      "lede": "Written examination, practical examination, and scenario documentation. The practical check-off is the credential.",
+      "empty": "Held until after the first course has run."
+    }
+  }
+}
