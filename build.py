@@ -316,8 +316,9 @@ if __name__ == "__main__":
     build_categories()
     build_vent_pages()
     build_recipes()
-    build_evidence_doc()
     shutil.copy("site/evidence/prehospital-blood.html".replace("prehospital-blood.html",""), OUT) if False else None
+    if os.path.exists("README.src.md"):
+        write("README.md", open("README.src.md").read())
     with open(os.path.join(OUT, ".nojekyll"), "w") as f:
         f.write("")
     with open(os.path.join(OUT, "CNAME"), "w") as f:

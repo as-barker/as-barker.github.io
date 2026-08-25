@@ -2,7 +2,8 @@
   "categories": {
     "evidence": {
       "heading": "Evidence reviews",
-      "lede": "The literature behind prehospital practice, as I read it."
+      "lede": "The literature behind prehospital practice, as I read it.",
+      "empty": "Nothing posted yet."
     },
     "programs": {
       "heading": "Programs and tools",
@@ -24,14 +25,6 @@
     }
   },
   "items": {
-    "evidence": [
-      {
-        "href": "prehospital-blood/",
-        "title": "Prehospital blood",
-        "description": "Quick overview of the evidence surrounding prehospital blood administration. More in-depth review to follow.",
-        "meta": "<b>Review</b> &nbsp; Compiled 2026-08-24"
-      }
-    ],
     "training": [
       {
         "href": "vent/",
