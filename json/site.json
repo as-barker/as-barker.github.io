@@ -1,0 +1,52 @@
+{
+  "name": "AB",
+  "bio": [
+    "Clinician in prehospital critical care with an interest in systems, education, and austere medicine.",
+    "Also cooking, which is on here too."
+  ],
+  "note": "I keep this for me. Help yourself.",
+  "email": "ab@abarker.org",
+  "categories": [
+    {
+      "slug": "evidence",
+      "name": "Evidence reviews",
+      "colour": "#17545A",
+      "description": "The literature behind prehospital practice, as I read it.",
+      "count": "1 item",
+      "revised": "2026-08-24"
+    },
+    {
+      "slug": "programs",
+      "name": "Programs and tools",
+      "colour": "#7C5216",
+      "description": "The tools I built or borrowed to make programs run. Steal away.",
+      "count": null,
+      "revised": null
+    },
+    {
+      "slug": "training",
+      "name": "Training",
+      "colour": "#8E3324",
+      "description": "What I teach, and the material behind it.",
+      "count": "1 program",
+      "revised": "2026-08-24"
+    },
+    {
+      "slug": "austere",
+      "name": "Austere medicine",
+      "colour": "#354A66",
+      "description": "Reading, coursework, and my own research as it happens.",
+      "count": null,
+      "revised": null
+    },
+    {
+      "slug": "recipes",
+      "name": "Recipes",
+      "colour": "#48592A",
+      "description": "Imperial with grams alongside, macros at the bottom.",
+      "countFrom": "recipes/recipes.json",
+      "unit": "item",
+      "revised": "2026-08-24"
+    }
+  ]
+}

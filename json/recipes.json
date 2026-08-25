@@ -1,0 +1,615 @@
+[
+  {
+    "slug": "lamb-tagine",
+    "title": "Lamb Tagine",
+    "serves": "Serves 6",
+    "blurb": "Slow-braised with apricots and warm spice, finished with cinnamon-toasted almonds.",
+    "ingredients": [
+      {
+        "imperial": "3 lb",
+        "grams": "1360 g",
+        "name": "bone-in lamb stew meat or neck, cut into 1½-inch pieces"
+      },
+      {
+        "imperial": "2½ tsp",
+        "grams": "7 g",
+        "name": "kosher salt, divided, plus more to taste"
+      },
+      {
+        "imperial": "1¾ cups",
+        "grams": "420 ml",
+        "name": "lamb or chicken stock"
+      },
+      {
+        "imperial": "5 oz",
+        "grams": "142 g",
+        "name": "dried apricots"
+      },
+      {
+        "imperial": "2 tbsp",
+        "grams": "27 g",
+        "name": "extra-virgin olive oil, plus more as needed"
+      },
+      {
+        "imperial": "2 large",
+        "grams": "500 g",
+        "name": "onions, thinly sliced"
+      },
+      {
+        "imperial": "1 tsp",
+        "grams": "6 g",
+        "name": "tomato paste"
+      },
+      {
+        "imperial": "½ tsp",
+        "grams": "2 g",
+        "name": "grated fresh ginger"
+      },
+      {
+        "imperial": "2 small",
+        "grams": "4 g",
+        "name": "cinnamon sticks, used separately"
+      },
+      {
+        "imperial": "Large pinch",
+        "grams": "0.2 g",
+        "name": "saffron"
+      },
+      {
+        "imperial": "½ tsp",
+        "grams": "1 g",
+        "name": "ground ginger"
+      },
+      {
+        "imperial": "¾ tsp",
+        "grams": "2 g",
+        "name": "ground turmeric"
+      },
+      {
+        "imperial": "¾ tsp",
+        "grams": "2 g",
+        "name": "ground black pepper"
+      },
+      {
+        "imperial": "¼ tsp",
+        "grams": "0.6 g",
+        "name": "ground cinnamon"
+      },
+      {
+        "imperial": "Pinch",
+        "grams": "0.2 g",
+        "name": "freshly grated nutmeg"
+      },
+      {
+        "imperial": "⅓ cup",
+        "grams": "5 g",
+        "name": "chopped fresh cilantro, divided"
+      },
+      {
+        "imperial": "1 tbsp",
+        "grams": "14 g",
+        "name": "unsalted butter"
+      },
+      {
+        "imperial": "½ cup",
+        "grams": "54 g",
+        "name": "slivered almonds"
+      },
+      {
+        "imperial": "2",
+        "grams": "30 g",
+        "name": "scallions, finely chopped"
+      },
+      {
+        "imperial": "2 tbsp",
+        "grams": "8 g",
+        "name": "chopped parsley"
+      },
+      {
+        "imperial": "",
+        "grams": "",
+        "name": "Fresh lemon juice, to taste"
+      }
+    ],
+    "steps": [
+      "Toss the lamb with 2 tsp (5.6 g) of the salt in a large bowl. Hold at room temperature for an hour, or refrigerate up to a day.",
+      "Bring the stock to a boil in a small pot, pull it off the heat, drop in the apricots, and leave them to soften for at least 15 minutes.",
+      "Heat the oven to 325&deg;F (165&deg;C). Warm the oil over medium heat in a tagine, Dutch oven, or heavy pot with a tight lid. Brown the lamb in batches with space around each piece, roughly 10 minutes per batch, moving finished pieces to a plate.",
+      "Pour off the rendered fat, leaving a thin film in the pot. Add the onions and &frac14; tsp (0.7 g) salt and cook until soft, about 8 minutes. Stir in the tomato paste, fresh ginger, one cinnamon stick, saffron, ground ginger, turmeric, pepper, ground cinnamon, and nutmeg, and cook until aromatic, about 2 minutes. Return the lamb with its juices, then add the apricots, stock, and half the cilantro. Seal with foil and the lid (foil is unnecessary in a tagine) and cook in the oven 2&frac12; to 3 hours, turning the meat now and then, until tender. Correct the seasoning.",
+      "While it cooks, melt the butter with the second cinnamon stick in a small skillet over medium heat. Add the almonds and &frac14; tsp (0.7 g) salt and toast to golden brown, 5 to 7 minutes. Remove the cinnamon stick.",
+      "Transfer the lamb and its juices to a platter. Scatter over the almonds along with the skillet butter, then the scallions, parsley, and remaining cilantro. Finish with lemon juice. Serve with flatbread or couscous."
+    ],
+    "macros": [
+      {
+        "label": "Energy",
+        "value": "520 kcal"
+      },
+      {
+        "label": "Protein",
+        "value": "30 g"
+      },
+      {
+        "label": "Fat",
+        "value": "33 g"
+      },
+      {
+        "label": "Carbohydrate",
+        "value": "25 g (fiber 3 g)"
+      },
+      {
+        "label": "Sodium",
+        "value": "550 mg"
+      }
+    ],
+    "note": "Per serving, estimated. The largest source of error is the bone-to-meat ratio, assumed at 65 percent edible yield, and how aggressively you drain the rendered fat. Sodium assumes Diamond Crystal and unsalted stock."
+  },
+  {
+    "slug": "marinara",
+    "title": "Marinara Sauce",
+    "serves": "Makes about 12 cups (2.8 L), 12 servings",
+    "blurb": "Sweet onion and whole tomatoes, simmered down an hour and blended smooth.",
+    "ingredients": [
+      {
+        "imperial": "½ cup",
+        "grams": "108 g",
+        "name": "extra-virgin olive oil"
+      },
+      {
+        "imperial": "2",
+        "grams": "500 g",
+        "name": "Vidalia or other sweet onions, very coarsely chopped"
+      },
+      {
+        "imperial": "6 cloves",
+        "grams": "18 g",
+        "name": "garlic, peeled"
+      },
+      {
+        "imperial": "2 tsp",
+        "grams": "2 g",
+        "name": "dried oregano"
+      },
+      {
+        "imperial": "4 cans (28 oz)",
+        "grams": "3175 g",
+        "name": "whole peeled tomatoes, with juices"
+      },
+      {
+        "imperial": "4 tsp",
+        "grams": "11 g",
+        "name": "kosher salt, plus more to taste"
+      },
+      {
+        "imperial": "1½ tsp",
+        "grams": "3 g",
+        "name": "freshly ground black pepper, plus more to taste"
+      }
+    ],
+    "steps": [
+      "Heat the oil in a large pot or Dutch oven over medium. Cook the onion and garlic, stirring now and then and keeping them from browning, until aromatic, about 3 minutes. Stir in the oregano.",
+      "Crush the tomatoes by hand and add them to the pot with all their juices. Season with the salt and pepper.",
+      "Bring to a boil, then drop to a gentle simmer. Cook uncovered, stirring occasionally, until slightly reduced, about 1 hour.",
+      "Off the heat, blend smooth with an immersion blender. Correct the seasoning."
+    ],
+    "macros": [
+      {
+        "label": "Energy",
+        "value": "130 kcal"
+      },
+      {
+        "label": "Protein",
+        "value": "2 g"
+      },
+      {
+        "label": "Fat",
+        "value": "9 g"
+      },
+      {
+        "label": "Carbohydrate",
+        "value": "10 g (fiber 3 g)"
+      },
+      {
+        "label": "Sodium",
+        "value": "800 mg"
+      }
+    ],
+    "note": "Per 1-cup serving, estimated. Diamond Crystal assumed. Canned tomato sodium varies widely between brands; unsalted tomatoes drop it to roughly 380 mg. Keeps 5 days airtight in the refrigerator, or 6 months frozen. The garlic goes in whole and gets blended at the end; crush it first if you want it sharper."
+  },
+  {
+    "slug": "coq-au-vin",
+    "title": "Coq au Vin",
+    "serves": "Serves 5",
+    "blurb": "Chicken legs braised in red wine with bacon and wild mushrooms.",
+    "ingredients": [
+      {
+        "imperial": "2 tbsp",
+        "grams": "27 g",
+        "name": "vegetable oil, divided"
+      },
+      {
+        "imperial": "5",
+        "grams": "1700 g",
+        "name": "skin-on, bone-in chicken legs"
+      },
+      {
+        "imperial": "",
+        "grams": "",
+        "name": "Kosher salt and freshly ground black pepper"
+      },
+      {
+        "imperial": "12 oz",
+        "grams": "340 g",
+        "name": "thick-cut bacon, cut crosswise into ⅓-inch slices"
+      },
+      {
+        "imperial": "3",
+        "grams": "180 g",
+        "name": "carrots, peeled and chopped"
+      },
+      {
+        "imperial": "3 stalks",
+        "grams": "120 g",
+        "name": "celery, minced"
+      },
+      {
+        "imperial": "1",
+        "grams": "170 g",
+        "name": "onion, minced"
+      },
+      {
+        "imperial": "4 cups",
+        "grams": "960 ml",
+        "name": "dry red wine such as Burgundy, divided"
+      },
+      {
+        "imperial": "½ cup",
+        "grams": "135 g",
+        "name": "tomato paste"
+      },
+      {
+        "imperial": "1 qt",
+        "grams": "960 ml",
+        "name": "low-sodium chicken broth"
+      },
+      {
+        "imperial": "12 sprigs",
+        "grams": "12 g",
+        "name": "thyme"
+      },
+      {
+        "imperial": "6 sprigs",
+        "grams": "12 g",
+        "name": "rosemary"
+      },
+      {
+        "imperial": "1 lb",
+        "grams": "454 g",
+        "name": "assorted wild mushrooms, cut into bite-size pieces"
+      }
+    ],
+    "steps": [
+      "Heat the oven to 350&deg;F (175&deg;C). Warm 1 tbsp (13 g) of the oil in an ovenproof pot over medium-high heat. Season the chicken with salt and pepper and brown it in batches, 5 to 6 minutes per side. Move it to a plate.",
+      "Add the bacon to the pot and cook until the fat renders. Add the carrots, celery, and onion and cook until the onion turns translucent, 7 to 8 minutes. Stir in 1 cup (240 ml) of the wine along with the tomato paste and simmer 2 to 3 minutes. Add the remaining 3 cups (720 ml) wine and boil until reduced by half, 15 to 20 minutes. Return the chicken to the pot.",
+      "Add the broth. Tie the thyme and rosemary into a bundle and add it. Bring to a boil, cover, and braise in the oven until the chicken is tender, about 1&frac14; hours.",
+      "Meanwhile, heat the remaining 1 tbsp (13 g) oil in a large pot over medium-high heat. Saut&eacute; the mushrooms until browned, about 5 minutes.",
+      "Pull the herb bundle out and discard it, or the reduction will push the rosemary past pleasant. Lift the chicken into the pot with the mushrooms to keep warm. Simmer the sauce over medium heat until reduced by a third, about 20 minutes. Season with salt and pepper.",
+      "Return the mushrooms and chicken to the sauce."
+    ],
+    "macros": [
+      {
+        "label": "Energy",
+        "value": "890 kcal"
+      },
+      {
+        "label": "Protein",
+        "value": "55 g"
+      },
+      {
+        "label": "Fat",
+        "value": "58 g"
+      },
+      {
+        "label": "Carbohydrate",
+        "value": "20 g (fiber 4 g)"
+      },
+      {
+        "label": "Sodium",
+        "value": "1350 mg"
+      }
+    ],
+    "note": "Per serving, estimated. Fat is the least stable figure, since it depends on whether you pour off rendered bacon fat; this assumes it all stays in. Sodium is driven by the bacon and moves with brand. Keeps 3 days: chill uncovered until cold, then cover, and rewarm before serving."
+  },
+  {
+    "slug": "oven-risotto",
+    "title": "Oven Risotto with Crispy Mushrooms",
+    "serves": "Serves 4",
+    "blurb": "Baked rather than stirred, topped with mushrooms roasted until they crisp.",
+    "ingredients": [
+      {
+        "imperial": "1 lb",
+        "grams": "454 g",
+        "name": "mixed wild, shiitake, or crimini mushrooms, sliced ¼ inch thick"
+      },
+      {
+        "imperial": "3 cloves",
+        "grams": "9 g",
+        "name": "garlic, thinly sliced"
+      },
+      {
+        "imperial": "6 sprigs",
+        "grams": "6 g",
+        "name": "thyme"
+      },
+      {
+        "imperial": "¼ tsp",
+        "grams": "0.5 g",
+        "name": "crushed red pepper flakes"
+      },
+      {
+        "imperial": "¼ cup + 2 tbsp",
+        "grams": "81 g",
+        "name": "extra-virgin olive oil, divided, plus more for drizzling"
+      },
+      {
+        "imperial": "1¾ tsp",
+        "grams": "5 g",
+        "name": "kosher salt, divided"
+      },
+      {
+        "imperial": "1 medium",
+        "grams": "170 g",
+        "name": "onion, finely chopped"
+      },
+      {
+        "imperial": "1 cup",
+        "grams": "200 g",
+        "name": "arborio rice"
+      },
+      {
+        "imperial": "½ tsp",
+        "grams": "1 g",
+        "name": "freshly ground black pepper"
+      },
+      {
+        "imperial": "½ cup",
+        "grams": "120 ml",
+        "name": "dry vermouth or white wine"
+      },
+      {
+        "imperial": "3 cups",
+        "grams": "720 ml",
+        "name": "chicken stock or low-sodium broth, divided"
+      },
+      {
+        "imperial": "2 oz",
+        "grams": "57 g",
+        "name": "finely grated Parmesan"
+      },
+      {
+        "imperial": "2 tbsp",
+        "grams": "28 g",
+        "name": "cold unsalted butter, cut into pieces"
+      },
+      {
+        "imperial": "½ tsp",
+        "grams": "1 g",
+        "name": "finely grated lemon zest"
+      },
+      {
+        "imperial": "⅓ cup",
+        "grams": "10 g",
+        "name": "coarsely chopped parsley"
+      },
+      {
+        "imperial": "",
+        "grams": "",
+        "name": "Lemon wedges, for serving"
+      }
+    ],
+    "steps": [
+      "Set racks in the bottom third and middle of the oven and heat to 350&deg;F (175&deg;C). On a rimmed baking sheet, toss the mushrooms with the garlic, thyme, red pepper flakes, &frac14; cup (54 g) of the oil, and &frac12; tsp (1.4 g) of the salt. Roast on the bottom rack, tossing once halfway, until deeply golden and crisp, 25 to 30 minutes.",
+      "Meanwhile, heat the remaining 2 tbsp (27 g) oil in a large ovenproof Dutch oven over medium-high. Cook the onion, stirring often, until softened, 3 to 5 minutes. Stir in the rice and season with the black pepper and &frac12; tsp (1.4 g) salt. Cook until some grains turn translucent, about 2 minutes. Add the vermouth, bring to a simmer, and cook until the pan is nearly dry, about 2 minutes. Add 2&frac12; cups (600 ml) of the stock, bring to a simmer, then cover and bake on the middle rack until the liquid is mostly absorbed and the rice is still slightly firm at the center, 16 to 18 minutes.",
+      "Return the pot to the stove over medium heat. Add the remaining &frac12; cup (120 ml) stock and cook, stirring constantly, until the rice is tender with some bite and the sauce is creamy, about 2 minutes. Off the heat, stir in the Parmesan, butter, and lemon zest, and season with the remaining salt to taste. Loosen with a little warm water if needed; it should be thick but pourable.",
+      "Turn out onto a platter, top with the crispy mushrooms and parsley, drizzle with oil, and serve with lemon wedges."
+    ],
+    "macros": [
+      {
+        "label": "Energy",
+        "value": "610 kcal"
+      },
+      {
+        "label": "Protein",
+        "value": "15 g"
+      },
+      {
+        "label": "Fat",
+        "value": "36 g"
+      },
+      {
+        "label": "Carbohydrate",
+        "value": "52 g (fiber 4 g)"
+      },
+      {
+        "label": "Sodium",
+        "value": "1000 mg"
+      }
+    ],
+    "note": "Per serving, estimated. Diamond Crystal assumed. Fat is high because the full quarter cup of roasting oil is counted, though some stays on the sheet. The mushrooms finish before the rice; leave them on the sheet rather than covering them, or you undo the crisping."
+  },
+  {
+    "slug": "herb-crusted-rack-of-lamb",
+    "title": "Herb-Crusted Rack of Lamb",
+    "serves": "Serves 4",
+    "blurb": "Seared, crusted with garlic and soft herbs, roasted to medium-rare.",
+    "ingredients": [
+      {
+        "imperial": "2 racks",
+        "grams": "1360 g",
+        "name": "frenched lamb, 8 ribs each, trimmed to a thin fat cap"
+      },
+      {
+        "imperial": "2 tsp",
+        "grams": "5.6 g",
+        "name": "kosher salt, divided"
+      },
+      {
+        "imperial": "1¼ tsp",
+        "grams": "2.5 g",
+        "name": "freshly ground black pepper, divided"
+      },
+      {
+        "imperial": "1 tsp",
+        "grams": "4 g",
+        "name": "vegetable oil"
+      },
+      {
+        "imperial": "3 large cloves",
+        "grams": "12 g",
+        "name": "garlic, minced"
+      },
+      {
+        "imperial": "¼ cup",
+        "grams": "15 g",
+        "name": "finely chopped fresh parsley"
+      },
+      {
+        "imperial": "1 tbsp",
+        "grams": "3 g",
+        "name": "finely chopped fresh thyme"
+      },
+      {
+        "imperial": "2 tsp",
+        "grams": "2 g",
+        "name": "finely chopped fresh rosemary"
+      },
+      {
+        "imperial": "1½ tbsp",
+        "grams": "20 g",
+        "name": "extra-virgin olive oil"
+      }
+    ],
+    "steps": [
+      "Heat a 12-inch heavy skillet over high heat until hot, at least 2 minutes.",
+      "Pat the racks dry and rub them all over with 1&frac12; tsp (4.2 g) of the salt and &frac34; tsp (1.5 g) of the pepper. Add the vegetable oil to the skillet and sear the racks, in two batches if needed, until browned on all sides but not the ends, about 10 minutes per batch. Move them to a small roasting pan.",
+      "Set a rack in the middle of the oven and heat to 350&deg;F (175&deg;C).",
+      "Stir together the garlic, parsley, thyme, rosemary, olive oil, and the remaining &frac12; tsp (1.4 g) salt and &frac12; tsp (1 g) pepper. Coat the meaty side of each rack with the herb mixture, pressing it on. Roast 15 to 25 minutes, until a thermometer inserted diagonally into the center reads 125&deg;F (52&deg;C). Tent loosely with foil after 15 minutes so the frenched bones do not burn.",
+      "Rest, covered, 10 minutes; the temperature will carry to 130&deg;F (54&deg;C) for medium-rare. Cut each rack into 4 double chops."
+    ],
+    "macros": [
+      {
+        "label": "Energy",
+        "value": "620 kcal"
+      },
+      {
+        "label": "Protein",
+        "value": "45 g"
+      },
+      {
+        "label": "Fat",
+        "value": "48 g"
+      },
+      {
+        "label": "Carbohydrate",
+        "value": "1 g"
+      },
+      {
+        "label": "Sodium",
+        "value": "700 mg"
+      }
+    ],
+    "note": "Per serving of two double chops, estimated. The dominant variable is how thin the fat cap is trimmed, which can swing the fat figure by 15 g per serving either way; bone weight is excluded. The rub goes on before the sear, so a good deal of that salt ends up in the pan. Salt the racks an hour ahead and pat them dry before searing if you want the seasoning to land more predictably."
+  },
+  {
+    "slug": "braised-chicken-olives-harissa",
+    "title": "Braised Chicken with Olives and Harissa",
+    "serves": "Serves 6",
+    "blurb": "Thighs marinated in harissa and ras el hanout, braised over onions and tomato.",
+    "ingredients": [
+      {
+        "imperial": "2 tbsp",
+        "grams": "27 g",
+        "name": "extra-virgin olive oil"
+      },
+      {
+        "imperial": "2 medium",
+        "grams": "340 g",
+        "name": "yellow onions, thinly sliced"
+      },
+      {
+        "imperial": "3 medium",
+        "grams": "370 g",
+        "name": "tomatoes, cored and cut into thin wedges"
+      },
+      {
+        "imperial": "3 to 3½ lb",
+        "grams": "1470 g",
+        "name": "skin-on, bone-in chicken thighs"
+      },
+      {
+        "imperial": "¾ cup",
+        "grams": "180 g",
+        "name": "mild harissa"
+      },
+      {
+        "imperial": "1 tsp",
+        "grams": "2 g",
+        "name": "ras el hanout"
+      },
+      {
+        "imperial": "2 tsp",
+        "grams": "5.6 g",
+        "name": "kosher salt, plus more for seasoning"
+      },
+      {
+        "imperial": "1 cup",
+        "grams": "140 g",
+        "name": "green olives such as Castelvetrano, pitted and roughly chopped, divided"
+      },
+      {
+        "imperial": "8 cloves",
+        "grams": "24 g",
+        "name": "garlic, peeled"
+      },
+      {
+        "imperial": "½ bunch",
+        "grams": "20 g",
+        "name": "fresh cilantro, finely chopped"
+      },
+      {
+        "imperial": "¼ cup",
+        "grams": "60 ml",
+        "name": "water"
+      }
+    ],
+    "steps": [
+      "Drizzle the oil into a large skillet with a tight-fitting lid and scatter the onions over it in an even layer. Lay the tomato wedges on top. Set aside.",
+      "In a large bowl, toss the chicken thoroughly with the harissa, ras el hanout, and salt. Arrange the chicken and any remaining marinade in a single layer over the vegetables. Scatter half the olives, the garlic cloves, and the cilantro over the chicken, then pour in the water and cover.",
+      "Set over high heat and cook just until the liquid simmers. Lower the heat to hold a simmer and cook, covered, until the chicken pulls apart easily with a fork, about 1&frac12; hours.",
+      "If much liquid remains, uncover, leave the chicken in the pan, and raise the heat to high. Cook until the sauce thickens, swirling the pan occasionally so it does not scorch, 10 to 15 minutes.",
+      "Off the heat, stir in the remaining olives. Serve with rice, mashed potatoes, or crusty bread."
+    ],
+    "macros": [
+      {
+        "label": "Energy",
+        "value": "560 kcal"
+      },
+      {
+        "label": "Protein",
+        "value": "38 g"
+      },
+      {
+        "label": "Fat",
+        "value": "40 g"
+      },
+      {
+        "label": "Carbohydrate",
+        "value": "12 g (fiber 3 g)"
+      },
+      {
+        "label": "Sodium",
+        "value": "1250 mg"
+      }
+    ],
+    "note": "Per serving, estimated, based on 3&frac14; lb of thighs with the skin left on. Sodium is dominated by the harissa and olives, both of which vary sharply by brand, so treat that figure as the softest here. Rendered chicken fat is counted in the sauce rather than discarded."
+  }
+]

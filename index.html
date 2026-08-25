@@ -4,15 +4,55 @@
 <title>AB</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head>
 <body><div class="w">
 <header class="mast"><h1>AB</h1>
-<p>Clinician in prehospital critical care with an interest in systems, education, and austere medicine.</p>
-<p>Also cooking, which is on here too.</p>
-<p class="note">I keep this for me. Help yourself.</p></header>
-<ul class="ix">
-<li style="--tc:#17545A"><a href="evidence/"><span class="tag">Evidence reviews</span><p>The literature behind prehospital practice, as I read it.</p><div class="meta"><b>1 item</b> &nbsp; Updated 2026-08-24</div></a></li>
-<li style="--tc:#7C5216"><a href="programs/"><span class="tag">Programs and tools</span><p>The tools I built or borrowed to make programs run. Steal away.</p><div class="meta"><span class="no">Nothing posted yet</span></div></a></li>
-<li style="--tc:#8E3324"><a href="training/"><span class="tag">Training</span><p>What I teach, and the material behind it.</p><div class="meta"><b>1 program</b> &nbsp; Updated 2026-08-24</div></a></li>
-<li style="--tc:#354A66"><a href="austere/"><span class="tag">Austere medicine</span><p>Reading, coursework, and my own research as it happens.</p><div class="meta"><span class="no">Nothing posted yet</span></div></a></li>
-<li style="--tc:#48592A"><a href="recipes/"><span class="tag">Recipes</span><p>Imperial with grams alongside, macros at the bottom.</p><div class="meta"><b>6 items</b> &nbsp; Updated 2026-08-24</div></a></li>
-</ul>
-<footer><a href="mailto:ab@abarker.org">ab@abarker.org</a></footer>
-</div></body></html>
+<div id="bio"></div></header>
+<ul class="ix" id="index"><li class="loading">Loading&hellip;</li></ul>
+<footer id="mail"></footer>
+</div><script>
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+async function countFrom(path){
+  try { const r = await fetch(path); const d = await r.json(); return d.length; }
+  catch(e){ return null; }
+}
+
+async function render(){
+  const el = document.getElementById('index');
+  let site;
+  try {
+    const r = await fetch('site.json');
+    if(!r.ok) throw new Error(r.status);
+    site = await r.json();
+  } catch(e){
+    el.innerHTML = '<p class="loadfail">Could not load the index. '
+      + '<a href="site.json">site.json</a> lists everything on here.</p>';
+    return;
+  }
+
+  document.getElementById('bio').innerHTML =
+    site.bio.map((p,i) => `<p${i?' class="muted"':''}>${esc(p)}</p>`).join('')
+    + `<p class="note">${esc(site.note)}</p>`;
+  document.getElementById('mail').innerHTML =
+    `<a href="mailto:${esc(site.email)}">${esc(site.email)}</a>`;
+
+  const rows = await Promise.all(site.categories.map(async c => {
+    let meta;
+    if (c.countFrom) {
+      const n = await countFrom(c.countFrom);
+      meta = n === null
+        ? '<span class="no">Count unavailable</span>'
+        : `<b>${n} ${esc(c.unit)}${n===1?'':'s'}</b> &nbsp; Updated ${esc(c.revised)}`;
+    } else if (c.count) {
+      meta = `<b>${esc(c.count)}</b> &nbsp; Updated ${esc(c.revised)}`;
+    } else {
+      meta = '<span class="no">Nothing posted yet</span>';
+    }
+    return `<li style="--tc:${esc(c.colour)}"><a href="${esc(c.slug)}/">`
+         + `<span class="tag">${esc(c.name)}</span>`
+         + `<p>${esc(c.description)}</p>`
+         + `<div class="meta">${meta}</div></a></li>`;
+  }));
+  el.innerHTML = rows.join('');
+}
+render();
+</script>
+</body></html>
