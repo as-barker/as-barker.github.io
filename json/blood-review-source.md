@@ -106,7 +106,7 @@ The choice between whole blood and components is a logistics decision now. We sh
 - If you are choosing between the two: choose on logistics, supply relationship, and wastage.
 - What deserves the attention instead is patient selection, time to first unit, and whether you are capturing outcomes on your medical hemorrhage patients at all.
 
-Every one of those unstudied patients is a data point somebody could have collected. That gap does not close from the top down. It closes because programs decide to write it down.
+Every one of those unstudied patients is a data point somebody could have collected.
 
 ---
 
