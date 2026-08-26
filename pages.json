@@ -2,8 +2,7 @@
   "categories": {
     "evidence": {
       "heading": "Evidence reviews",
-      "lede": "Literature I find interesting, primarily on prehospital topics",
-      "empty": "Nothing posted yet."
+      "lede": "Literature I find interesting, primarily on prehospital topics"
     },
     "programs": {
       "heading": "Programs and tools",
@@ -31,6 +30,14 @@
         "title": "Ventilators for Critical Care Paramedics",
         "description": "Pre-course reading, course material, and assessment for the ventilator program.",
         "meta": "<b>3 sections</b> &nbsp; Updated 2026-08-24"
+      }
+    ],
+    "evidence": [
+      {
+        "href": "prehospital-blood/",
+        "title": "Prehospital blood",
+        "description": "What the 2026 trials tested, what they did not, and the population nobody has studied.",
+        "meta": "<b>Work in progress</b> &nbsp; Updated 2026-08-25"
       }
     ]
   },

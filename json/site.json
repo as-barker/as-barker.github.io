@@ -11,9 +11,9 @@
       "slug": "evidence",
       "name": "Evidence reviews",
       "colour": "#17545A",
-      "description": "The literature behind prehospital practice, as I read it.",
-      "count": null,
-      "revised": null
+      "description": "Literature I find interesting, primarily on prehospital topics",
+      "count": "1 item",
+      "revised": "2026-08-25"
     },
     {
       "slug": "programs",
@@ -35,7 +35,7 @@
       "slug": "austere",
       "name": "Austere medicine",
       "colour": "#354A66",
-      "description": "Reading, coursework, and my own research as it happens.",
+      "description": "Reading, coursework, research for grad school",
       "count": null,
       "revised": null
     },
