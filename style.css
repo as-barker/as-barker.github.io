@@ -1,11 +1,11 @@
 
 :root{--paper:#F5F6F5;--ink:#14181A;--muted:#5F6968;--rule:#D2D8D5;--hair:#E4E9E7;
---flag:#A33A2A;--c:#14181A;--measure:34rem}
+--flag:#A33A2A;--c:#14181A;--measure:44rem}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);
 font-family:"Source Serif 4",Cambria,Georgia,serif;font-size:17px;line-height:1.6}
-.w{max-width:50rem;margin:0 auto;padding:4.5rem 1.5rem 6rem}
+.w{max-width:62rem;margin:0 auto;padding:4.5rem 1.5rem 6rem}
 
 .crumb{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;
 letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:2.5rem}
