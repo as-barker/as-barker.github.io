@@ -218,82 +218,120 @@
   {
     "slug": "coq-au-vin",
     "title": "Coq au Vin",
-    "serves": "Serves 5",
-    "blurb": "Chicken legs braised in red wine with bacon and wild mushrooms.",
+    "serves": "Serves 4",
+    "blurb": "Marinated overnight in Burgundy, braised with lardons, and finished with glazed pearl onions and fried croutons.",
     "ingredients": [
       {
-        "imperial": "2 tbsp",
-        "grams": "27 g",
-        "name": "vegetable oil, divided"
+        "imperial": "3 lb",
+        "grams": "1360 g",
+        "name": "chicken legs and thighs"
       },
       {
-        "imperial": "5",
-        "grams": "1700 g",
-        "name": "skin-on, bone-in chicken legs"
+        "imperial": "2½ tsp",
+        "grams": "7 g",
+        "name": "kosher salt, divided, plus more to taste"
       },
       {
-        "imperial": "",
-        "grams": "",
-        "name": "Kosher salt and freshly ground black pepper"
+        "imperial": "½ tsp",
+        "grams": "1 g",
+        "name": "freshly ground black pepper, plus more to taste"
       },
       {
-        "imperial": "12 oz",
-        "grams": "340 g",
-        "name": "thick-cut bacon, cut crosswise into ⅓-inch slices"
-      },
-      {
-        "imperial": "3",
-        "grams": "180 g",
-        "name": "carrots, peeled and chopped"
-      },
-      {
-        "imperial": "3 stalks",
-        "grams": "120 g",
-        "name": "celery, minced"
+        "imperial": "3 cups",
+        "grams": "720 ml",
+        "name": "hearty red wine, Burgundy for preference"
       },
       {
         "imperial": "1",
-        "grams": "170 g",
-        "name": "onion, minced"
+        "grams": "",
+        "name": "bay leaf"
       },
       {
-        "imperial": "4 cups",
-        "grams": "960 ml",
-        "name": "dry red wine such as Burgundy, divided"
+        "imperial": "1 tsp",
+        "grams": "1 g",
+        "name": "chopped fresh thyme leaves"
       },
       {
-        "imperial": "½ cup",
-        "grams": "135 g",
+        "imperial": "4 oz",
+        "grams": "113 g",
+        "name": "lardons, pancetta or bacon, cut into ¼-inch dice"
+      },
+      {
+        "imperial": "3 tbsp",
+        "grams": "40 g",
+        "name": "extra-virgin olive oil, divided, plus more as needed"
+      },
+      {
+        "imperial": "1 large",
+        "grams": "250 g",
+        "name": "onion, diced"
+      },
+      {
+        "imperial": "1 large",
+        "grams": "80 g",
+        "name": "carrot, peeled and diced"
+      },
+      {
+        "imperial": "8 oz",
+        "grams": "227 g",
+        "name": "white or brown mushrooms, sliced, halved first if large"
+      },
+      {
+        "imperial": "2 cloves",
+        "grams": "6 g",
+        "name": "garlic, minced"
+      },
+      {
+        "imperial": "1 tsp",
+        "grams": "6 g",
         "name": "tomato paste"
       },
       {
-        "imperial": "1 qt",
-        "grams": "960 ml",
-        "name": "low-sodium chicken broth"
+        "imperial": "1 tbsp",
+        "grams": "8 g",
+        "name": "all-purpose flour"
       },
       {
-        "imperial": "12 sprigs",
-        "grams": "12 g",
-        "name": "thyme"
+        "imperial": "2 tbsp",
+        "grams": "30 ml",
+        "name": "brandy"
       },
       {
-        "imperial": "6 sprigs",
-        "grams": "12 g",
-        "name": "rosemary"
+        "imperial": "3 tbsp",
+        "grams": "42 g",
+        "name": "unsalted butter, divided"
       },
       {
-        "imperial": "1 lb",
-        "grams": "454 g",
-        "name": "assorted wild mushrooms, cut into bite-size pieces"
+        "imperial": "8 oz",
+        "grams": "227 g",
+        "name": "peeled pearl onions, about 12 to 15"
+      },
+      {
+        "imperial": "Pinch",
+        "grams": "",
+        "name": "sugar"
+      },
+      {
+        "imperial": "2 slices",
+        "grams": "60 g",
+        "name": "white bread, crusts removed, cut into triangles"
+      },
+      {
+        "imperial": "¼ cup",
+        "grams": "15 g",
+        "name": "chopped parsley, plus more to finish"
       }
     ],
     "steps": [
-      "Heat the oven to 350&deg;F (175&deg;C). Warm 1 tbsp (13 g) of the oil in an ovenproof pot over medium-high heat. Season the chicken with salt and pepper and brown it in batches, 5 to 6 minutes per side. Move it to a plate.",
-      "Add the bacon to the pot and cook until the fat renders. Add the carrots, celery, and onion and cook until the onion turns translucent, 7 to 8 minutes. Stir in 1 cup (240 ml) of the wine along with the tomato paste and simmer 2 to 3 minutes. Add the remaining 3 cups (720 ml) wine and boil until reduced by half, 15 to 20 minutes. Return the chicken to the pot.",
-      "Add the broth. Tie the thyme and rosemary into a bundle and add it. Bring to a boil, cover, and braise in the oven until the chicken is tender, about 1&frac14; hours.",
-      "Meanwhile, heat the remaining 1 tbsp (13 g) oil in a large pot over medium-high heat. Saut&eacute; the mushrooms until browned, about 5 minutes.",
-      "Pull the herb bundle out and discard it, or the reduction will push the rosemary past pleasant. Lift the chicken into the pot with the mushrooms to keep warm. Simmer the sauce over medium heat until reduced by a third, about 20 minutes. Season with salt and pepper.",
-      "Return the mushrooms and chicken to the sauce."
+      "Season the chicken with 2&frac14; tsp (6.3 g) of the salt and the &frac12; tsp pepper. Put it in a large bowl with the wine, bay leaf and thyme, cover, and refrigerate. Two hours will do; overnight is better.",
+      "Render the lardons in a Dutch oven over medium-low heat until crisp and golden, 10 to 15 minutes. Lift them out with a slotted spoon onto paper towel and leave the fat in the pot.",
+      "Lift the chicken out of the marinade, keeping the liquid. Dry the pieces thoroughly, or they will steam rather than brown. Bring the rendered fat to just short of smoking over medium heat and brown the chicken in a single layer, working in batches, 3 to 5 minutes a side. Add oil if the pot runs dry. Move each piece to a plate as it colours.",
+      "Into the same pot go the diced onion, carrot, half the mushrooms, and the remaining &frac14; tsp (0.7 g) salt. Cook about 8 minutes until lightly browned, scraping up the fond as you go and dropping the heat if anything threatens to catch.",
+      "Stir in the garlic and tomato paste for a minute, then the flour for another. Off the heat, push the vegetables to one side, pour the brandy into the clear space and light it. If that makes you nervous, simmer it off for a minute instead. Once the flame dies, pour in the reserved marinade, bring to a boil, and reduce by half to about 1&frac12; cups (360 ml), roughly 12 minutes, skimming any large pockets of foam.",
+      "Return the chicken with its juices and half the lardons. Cover and simmer gently for an hour, turning the pieces once. Uncover and simmer 15 minutes more to thicken. Correct the seasoning.",
+      "While that cooks, melt 1 tbsp (14 g) of the butter with 2 tbsp (27 g) of the oil in a skillet over medium-high. Add the pearl onions with a pinch of sugar and a little salt, cover, drop to low, and cook 15 minutes, shaking the pan often. Uncover, push the onions aside, add the remaining mushrooms, and raise the heat. Cook 5 to 8 minutes until browned, stirring the mushrooms and tossing the onions now and then. Take both out and wipe the pan.",
+      "In the same pan, melt the remaining 2 tbsp (28 g) butter with 1 tbsp (13 g) oil over medium heat until foaming. Fry the bread until golden, about 2 minutes a side, adjusting the heat so it does not burn. Salt the croutons as they come out.",
+      "Add the pearl onions, mushrooms and remaining lardons to the pot and baste everything in the sauce. Dip each crouton in the sauce and then into the parsley. Scatter the rest of the parsley over the dish and set the croutons on top."
     ],
     "macros": [
       {
@@ -306,18 +344,18 @@
       },
       {
         "label": "Fat",
-        "value": "58 g"
+        "value": "62 g"
       },
       {
         "label": "Carbohydrate",
-        "value": "20 g (fiber 4 g)"
+        "value": "20 g (fiber 3 g)"
       },
       {
         "label": "Sodium",
-        "value": "1350 mg"
+        "value": "1200 mg"
       }
     ],
-    "note": "Per serving, estimated. Fat is the least stable figure, since it depends on whether you pour off rendered bacon fat; this assumes it all stays in. Sodium is driven by the bacon and moves with brand. Keeps 3 days: chill uncovered until cold, then cover, and rewarm before serving."
+    "note": "Per serving, estimated. Bone-to-meat ratio is assumed at 65 percent edible yield, and the fat figure assumes the rendered lardon fat stays in the pot. Sodium is driven by the cured pork and the salt brand; Diamond Crystal assumed. Alcohol is taken as cooked off, with residual wine sugars counted in the carbohydrate."
   },
   {
     "slug": "oven-risotto",
